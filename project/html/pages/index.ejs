@@ -1,26 +1,41 @@
 <html lang="en">
+
 <head>
-    <% include ../helpers/head %>
+	<% include ../helpers/head %>
 </head>
 
 <body>
 
-  <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
-  <!-- Check out more components here: http://getbootstrap.com/components/ -->
-  <div class="page-header">
-    <% include ../helpers/navbar %>
-    <h1>Making Changes to the Header</h1>
-  </div>
+	<!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
+	<!-- Check out more components here: http://getbootstrap.com/components/ -->
 
-  <p id="demo">
-    This is me testing out a lil html file
-  </p>
+	<div class="page-header">
+		<% include ../helpers/navbar %>
+			<h1>Weather</h1>
+	</div>
 
-  <button class="btn btn-default" type="button" onclick="myFunction()">
+
+	<p id="demo">
+		Whats Hot?
+	</p>
+
+	<div class="row">
+		<div class="col-lg-3">
+			<input class="search form-control" type="text" placeholder="Enter a City Name" aria-describedby="sizing-addon3">
+			<button class="btn btn-warning" type="button" onClick="searchWeather()">Search</button>
+		</div>
+	</div>
+
+	<div class="city"></div>
+
+	<div class="temp"></div>
+
+	<!-- <button class="btn btn-default" type="button" onclick="myFunction()">
     Try it
   </button>
 
-  <div id="doge-image">
+  <div id="doge-image"> -->
+
 
 </body>
 
